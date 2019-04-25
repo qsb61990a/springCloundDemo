@@ -1,0 +1,19 @@
+server:
+    port: 8881
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:18761/eureka/
+spring:
+  application:
+    #对应config server中配置文件的{application}
+    name: config-client
+  cloud:
+    config:
+      #访问config server的地址
+      uri: http://localhost:8888
+      #对应config server中配置文件的{profile}
+      profile: dev
+      #对应config server中配置文件的{label}
+      label: master

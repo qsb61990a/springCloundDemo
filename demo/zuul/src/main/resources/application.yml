@@ -1,0 +1,55 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:18761/eureka/
+server:
+  port: 13000
+spring:
+  application:
+    name: zuul
+zuul:
+  routes:
+    servicehello1:
+      path: /servicehello1/**
+      serviceId: service-hi
+    servicehello2:
+      path: /servicehello2/**
+      serviceId: service-hi2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
